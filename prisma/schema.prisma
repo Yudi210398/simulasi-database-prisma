@@ -12,13 +12,13 @@ datasource db {
   provider = "postgresql"
 }
 
-model Barang {
+model Produk {
   id          Int    @id @default(autoincrement())
   namaBarang  String @db.VarChar(100)
   hargaBarang Int    @db.Integer
   qty         Int    @db.Integer
 
-  @@map("barang")
+  @@map("produk")
 }
 
 model Customer {

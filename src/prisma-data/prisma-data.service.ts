@@ -14,7 +14,7 @@ export class PrismaDataService extends PrismaClient implements OnModuleInit {
 
   async onModuleInit() {
     await this.$connect().then(async () => {});
-    console.log(`konek database`);
+    console.log(`konek database`, process.env.DATABASE_URL);
   }
 
   async enableShutdownHooks(app: INestApplication) {

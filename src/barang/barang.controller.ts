@@ -6,7 +6,7 @@ export class BarangController {
   constructor(private serviceBarang: BarangService) {}
 
   @Get()
-  async getData() {
+  async getDatas() {
     return this.serviceBarang.getData();
   }
 }
